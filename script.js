@@ -1,9 +1,8 @@
 function fibonacci(num) {
-if(num<=1){
+  if (num <= 1) {
     return num;
-  }
-  else{
-  return fibonacci(n-1) + fibonacci(n-2);
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
   }
 }
 
