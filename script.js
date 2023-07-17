@@ -1,12 +1,15 @@
 function fibonacci(num) {
-// your code here
-	if(num === 1) return 0;
-	if(num === 2) return 1;
-
-	return fibonacci(num-2)+fibonacci(num-1);
+   let a = 0;
+   let b = 1;
+   if(num==1) return a;
+   if(num==2) return b;
+	let c;
+	for(let i=3;i<=num;i++){
+		    c = a+b;
+		    a= b;
+		    b = c;	    
+	}
+	return c;
 }
-// let a = prompt("Enter a number");
-// let ans = fibonacci(a);
-// alert("Your fib no. is "+ans);
 
 module.exports = fibonacci;
